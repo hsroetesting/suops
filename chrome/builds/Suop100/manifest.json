@@ -1,0 +1,30 @@
+{
+	"manifest_version": 2,
+	"name": "Suops",
+	"description": "Subscription Groups (LIKE THE YOUTUBE COLLECTIONS FEATURE GOOGLE REMOVED). Please watch the tutorial video before using!",
+	"version": "1.0.0",
+	"permissions": [
+		"storage",
+		"tabs"
+	],
+	"content_scripts": [
+	{
+		"matches": [
+			"https://*.youtube.com/",
+			"https://*.youtube.com/*"
+		],
+		"js": ["content.js"]
+	} ],
+	"browser_action": {
+		"default_icon": "icon32.png",
+		"default_popup": "popup.html"
+	},
+	"web_accessible_resources": [
+		"ut.js"
+	],
+	"icons": {
+		"32": "icon32.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	}
+}

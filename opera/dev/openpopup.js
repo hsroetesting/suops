@@ -1,0 +1,1 @@
+﻿window.open('popup.html', '_blank');
